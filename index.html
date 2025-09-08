@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Events & Interactivity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>JavaScript Events & Interactivity Demo</h1>
+    <button id="theme-toggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section>
+      <h2>Counter Game</h2>
+      <button id="increment-btn">Click Me!</button>
+      <p>Count: <span id="counter">0</span></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer hidden">JavaScript is the language of the web that makes pages dynamic and interactive.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What is DOM?</h3>
+        <p class="faq-answer hidden">The DOM (Document Object Model) represents your webpage as objects that JavaScript can manipulate.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>Signup Form</h2>
+      <form id="signup-form">
+        <label>
+          Name: <input type="text" id="name" />
+          <small class="error" id="name-error"></small>
+        </label>
+        <label>
+          Email: <input type="email" id="email" />
+          <small class="error" id="email-error"></small>
+        </label>
+        <label>
+          Password: <input type="password" id="password" />
+          <small class="error" id="password-error"></small>
+        </label>
+        <button type="submit">Register</button>
+        <p id="form-success" class="success hidden"> Form submitted successfully!</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
